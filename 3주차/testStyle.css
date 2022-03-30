@@ -1,6 +1,5 @@
 .flex-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
@@ -11,5 +10,4 @@
     height: 200px;
     border: 3px solid slateblue;
     background-color: pink;
-    text-align: center;
 }
