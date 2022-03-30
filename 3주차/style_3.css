@@ -1,0 +1,35 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: pink;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color:yellow;
+}
+
+div:hover {
+    background-color: grey;
+}
+
+#yellow:hover {
+    background-color: green;
+}
+
+div:active {
+    background-color: purple;
+}
+
+input:focus {
+    background-color: blue;
+}
