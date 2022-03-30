@@ -1,0 +1,54 @@
+/*inline : span, a, img, button*/
+/*block : p, div, ul, li, h1-h6*/
+
+/*display : none, inline, block, inline-block*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+p, span {
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    background-color: coral;
+    /* display: inline; */
+    display: inline-block;
+}
+
+span {
+    background-color: teal;
+    display: inline-block;
+}
+
+p:nth-child(3) {
+    /* display: none; */
+    margin: 5px 10px 20px 30px;
+    margin-right: 50px;
+    padding: 20px;
+    border: 5px solid blue ;
+    border-top-width: 15px;
+    /* box-sizing: border-box; */
+}
+
+div {
+    margin-top: 20px;
+    background-color : lightblue;
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+}
+
+div span{
+    font-size: 1.2em;
+    height: 80%;
+    width: 100%;
+}

@@ -1,0 +1,13 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.flex-items{
+    width: 200px;
+    height: 200px;
+    border: 3px solid slateblue;
+    background-color: pink;
+}
