@@ -300,6 +300,11 @@ main {
   line-height: 20px;
 }
 
+#content a {
+  color: #35a3e6;
+  /* text-decoration: none; */
+}
+
 /* comment */
 #commentHeader {
   margin: 24px 0 32px;
