@@ -57,6 +57,13 @@ a:active {
   background-color: white;
 }
 
+#nav-contry {
+  margin: 12px 0 0 -10px;
+  color: #606060;
+  font-size: 10px;
+  height: 44px;
+}
+
 .start,
 .center,
 .end {
@@ -178,7 +185,7 @@ main {
 
 /* video player */
 #videoPlayerContainer {
-  width: 950px;
+  width: 900px;
   height: 500px;
 }
 
@@ -276,6 +283,7 @@ main {
 }
 
 #subscribeBtn {
+  width: 71.95px;
   text-transform: capitalize;
   background-color: #c00;
   border-radius: 2px;
@@ -380,7 +388,7 @@ main {
 }
 .recommendedVideoList {
   height: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .videoItemContainer {

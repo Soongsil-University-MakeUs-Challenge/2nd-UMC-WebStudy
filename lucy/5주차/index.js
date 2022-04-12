@@ -3,9 +3,9 @@ const $commentList = document.querySelector("#commentsList");
 const commentItemTemplate = (newComment) => {
   return `
 	<li class="commentItem">
-		<img src="https://yt3.ggpht.com/ytc/AKedOLRKKkygHmqt19zEEQRV4v_MvK8d1mXnBmY372ri7A=s88-c-k-c0x00ffffff-no-rj"  class="profileImg" />
+		<img src="https://yt3.ggpht.com/OzbOH5rW9ftCbM7PKXe_e0wwL-ij7aUDZ-eZI2NNV1uiAxlQ3Xd--sdy7WpPgrBkDaRKojP_Jw=s88-c-k-c0x00ffffff-no-rj"  class="profileImg" />
 		<div>
-			<p id="commentName">Mary Shen</p>
+			<p id="commentName">seyeon Park</p>
 			<p>${newComment}</p>
 			<div class="flex">
 				<button class="commentBtn">
