@@ -265,7 +265,7 @@
   display: block;
   margin: auto;
   width: 50vw;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 .reviewTitle,
