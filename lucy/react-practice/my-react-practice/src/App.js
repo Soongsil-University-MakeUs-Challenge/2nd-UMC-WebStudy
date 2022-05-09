@@ -3,6 +3,7 @@ import ukovIcon from "./assets/ukov-icon.png";
 import softBank from "./assets/soft-bank.png";
 import "./index.css";
 import "./App.css";
+// import daangn from "./assets/company.png";
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
       <div className="topBar">
         <div className="logoAndMenu">
           <img className="logo" src={ukovIcon} alt="UKOV-logo" />
-          <ul>
-            <li>리쿠르팅</li>
-            <li>프로그램</li>
-            <li>홈</li>
+          <ul className="menuContainer">
+            <li className="menuList">홈</li>
+            <li className="menuList">프로그램</li>
+            <li className="menuList">리쿠르팅</li>
           </ul>
         </div>
       </div>
@@ -88,11 +89,25 @@ function App() {
           </div>
         </div>
       </div>
-      dd
-      {/* <div className="reviewContainer">
-        <div className="reviewTitle">UKVO 후기</div>
-        <div className="reviewSubtitle">더 많은 후기 보러가기</div>
-      </div> */}
+      <div className="subInfo">
+        <div className="reviewContainer">
+          <div className="reviewTitle">UKVO 후기</div>
+          <div className="reviewSubtitle">더 많은 후기 보러가기</div>
+        </div>
+        <div className="programContainer">
+          <div className="programTitle">프로그램</div>
+          <div className="programSubtitle">
+            유코브 단원이 되면 다음과 같은 프로그램을 함께합니다.
+          </div>
+        </div>
+        <div className="partnerCompanyContainer">
+          <div className="partnerCompanyTitle">다양한 파트너사</div>
+          <div className="partnerCompanySubtitle">
+            세상에 큰 영향을 미치고 있는 <br></br>
+            다양한 스타트업들과 함께 해왔습니다.
+          </div>
+        </div>
+      </div>
       <div className="footerBlack">
         <div className="footerBlackTitle">BEGIN YOUR JOURNEY TO START-UP!</div>
         <div className="footerBlackInfo">
