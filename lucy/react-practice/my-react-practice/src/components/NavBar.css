@@ -1,0 +1,22 @@
+.navBar {
+  width: 1920px;
+  height: 74px;
+  box-shadow: 0 2px 0 0 #f4f4f4;
+}
+
+.navBar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 76px;
+  height: 22px;
+}
+
+.navMenu-container li {
+  list-style: none;
+  float: left;
+}
