@@ -1,11 +1,10 @@
-const $commentForm = document.querySelector("#commentInputContainer")
-const $commentInput = document.querySelector("#commentInput")
+const $commentForm = document.querySelector("#commentInputContainer");
+const $commentInput = document.querySelector("#commentInput");
 
-
-const $commentList = document.querySelector('#commentsList');
+const $commentList = document.querySelector("#commentsList");
 
 const commentItemTemplate = (newComment) => {
-    return `
+  return `
     <li class="commentItem">
       <img src="https://yt3.ggpht.com/yti/APfAmoGriZ4klo5sGUIrCI2BXaX0QH7hI-R0QYx15Q=s88-c-k-c0x00ffffff-no-rj-mo" class="profileImg" />
       <div>
@@ -21,24 +20,36 @@ const commentItemTemplate = (newComment) => {
           <button class="commentBtn">
             답글
           </button>
+          <button class="commentRemoveBtn">
+            삭제하기
+          </button>
         </div>
       </div> 
     </li>
 `;
-}
+};
 
 // const newComment = commentItemTemplate('안녕하세요.반갑습니다')
 
-// $commentList.insertAdjacentHTML("afterbegin", newComment) 
+// $commentList.insertAdjacentHTML("afterbegin", newComment)
 
-$commentForm.addEventListener('submit', handleSubmit);
+$commentForm.addEventListener("submit", handleSubmit);
 
-function handleSubmit(event){
-    event.preventDefault();
-    const newComment = $commentInput.value;
+function handleSubmit(event) {
+  event.preventDefault();
+  const newComment = $commentInput.value;
 
-    if (!newComment) {return};
-    const newCommentItem = commentItemTemplate(newComment);
-    $commentList.insertAdjacentHTML('afterbegin',newCommentItem);
-    $commentInput.value = "";
+  if (!newComment) {
+    return;
+  }
+  const newCommentItem = commentItemTemplate(newComment);
+  $commentList.insertAdjacentHTML("afterbegin", newCommentItem);
+  $commentInput.value = "";
+
+  const $commentRemoveBtn = document.querySelector(".commentRemoveBtn");
+  const $commentItem = document.querySelector(".commentItem");
+
+  $commentRemoveBtn.addEventListener("click", () => {
+    $commentList.removeChild($commentItem);
+  });
 }
