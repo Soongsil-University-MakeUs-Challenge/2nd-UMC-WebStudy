@@ -140,12 +140,47 @@ function App() {
           <div className="programSubtitle">
             유코브 단원이 되면 다음과 같은 프로그램을 함께합니다.
           </div>
+          <div className="programContentsContainer">
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+          </div>
         </div>
+
         <div className="partnerCompanyContainer">
           <div className="partnerCompanyTitle">다양한 파트너사</div>
           <div className="partnerCompanySubtitle">
             세상에 큰 영향을 미치고 있는 <br></br>
             다양한 스타트업들과 함께 해왔습니다.
+          </div>
+          <div className="PCLogoContainer">
+            <div className="PCLogo">1</div>
+            <div className="PCLogo">2</div>
+            <div className="PCLogo">3</div>
+            <div className="PCLogo">4</div>
+
+            <div className="PCLogo">5</div>
+            <div className="PCLogo">6</div>
+            <div className="PCLogo">7</div>
+            <div className="PCLogo">8</div>
+
+            <div className="PCLogo">9</div>
+            <div className="PCLogo">10</div>
+            <div className="PCLogo">11</div>
+            <div className="PCLogo">12</div>
+
+            <div className="PCLogo">13</div>
+            <div className="PCLogo">14</div>
+            <div className="PCLogo">15</div>
+            <div className="PCLogo">16</div>
           </div>
         </div>
       </div>
