@@ -3,6 +3,8 @@ import ukovIcon from "./assets/ukov-icon.png";
 import softBank from "./assets/soft-bank.png";
 import "./index.css";
 import "./App.css";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import { AiOutlineLeftCircle } from "react-icons/ai";
 // import daangn from "./assets/company.png";
 
 function App() {
@@ -93,18 +95,92 @@ function App() {
         <div className="reviewContainer">
           <div className="reviewTitle">UKVO 후기</div>
           <div className="reviewSubtitle">더 많은 후기 보러가기</div>
+
+          <div className="reviewContentsContainer">
+            <div className="reviewContent">
+              <div className="reviewContentImg"> </div>
+              <div className="reviewContentSmallTitle">UKOV 22기</div>
+              <div className="reviewContentBigTitle">
+                유일한 졸업생 단원이 전하는 후기 글이 넘치면 이렇게 줄여서…
+              </div>
+            </div>
+
+            <div className="reviewContent">
+              <div className="reviewContentImg"> </div>
+              <div className="reviewContentSmallTitle">UKOV 22기</div>
+              <div className="reviewContentBigTitle">
+                유코브 선배들이 알려주는 유코브 합격꿀팁!
+              </div>
+            </div>
+
+            <div className="reviewContent">
+              <div className="reviewContentImg"> </div>
+              <div className="reviewContentSmallTitle">UKOV 22기</div>
+              <div className="reviewContentBigTitle">
+                유코브 선배들이 알려주는 유코브 합격꿀팁!
+              </div>
+            </div>
+          </div>
+
+          <div className="reviewArrows">
+            <AiOutlineLeftCircle
+              className="reviewLeftArrow"
+              size="34"
+              color="#d6d6d6"
+            />
+            <AiOutlineRightCircle
+              className="reviewRightArrow"
+              size="34"
+              color="#868686"
+            />
+          </div>
         </div>
         <div className="programContainer">
           <div className="programTitle">프로그램</div>
           <div className="programSubtitle">
             유코브 단원이 되면 다음과 같은 프로그램을 함께합니다.
           </div>
+          <div className="programContentsContainer">
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+
+            <div className="programContent">
+              <div className="programContentImg"> </div>
+            </div>
+          </div>
         </div>
+
         <div className="partnerCompanyContainer">
           <div className="partnerCompanyTitle">다양한 파트너사</div>
           <div className="partnerCompanySubtitle">
             세상에 큰 영향을 미치고 있는 <br></br>
             다양한 스타트업들과 함께 해왔습니다.
+          </div>
+          <div className="PCLogoContainer">
+            <div className="PCLogo">1</div>
+            <div className="PCLogo">2</div>
+            <div className="PCLogo">3</div>
+            <div className="PCLogo">4</div>
+
+            <div className="PCLogo">5</div>
+            <div className="PCLogo">6</div>
+            <div className="PCLogo">7</div>
+            <div className="PCLogo">8</div>
+
+            <div className="PCLogo">9</div>
+            <div className="PCLogo">10</div>
+            <div className="PCLogo">11</div>
+            <div className="PCLogo">12</div>
+
+            <div className="PCLogo">13</div>
+            <div className="PCLogo">14</div>
+            <div className="PCLogo">15</div>
+            <div className="PCLogo">16</div>
           </div>
         </div>
       </div>

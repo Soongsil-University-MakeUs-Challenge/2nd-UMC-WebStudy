@@ -4,9 +4,10 @@
 
 [우에엥](https://app.zeplin.io/project/5f8724084323df37e6162af0/screen/5f872426bb0337bf88479178)
 
-![](https://ifh.cc/g/DxFcLR.jpg)
-![](https://ifh.cc/g/c65AnK.png)
-![](https://ifh.cc/g/Jb4Yvw.png)
+![](https://ifh.cc/g/Flmxoo.jpg)
+![](https://ifh.cc/g/f1OOrQ.png)
+![](https://ifh.cc/g/061HzO.png)
+![](https://ifh.cc/g/VGZaQ0.png)
 
 ✅ check
 
@@ -24,8 +25,18 @@
 - 메인 소개 부분 완성 (flex 사용함)
 - 검은 배경 부분 완성 (flex 사용함)
 - footer 완성
-- **후기, 프로그램, 파트너사 미완성**
+- 후기, 프로그램, 파트너사 미완성
 - 반응형 그런거 모름
   - 전체적인 화면 구분 1 : 2 : 1 로 나누고,, 가운데 content들 width : 50vm 으로 두긴했음
 
 👀 5/10
+
+- 후기부분 완성
+  - 화살표 -> react-icon 사용
+  - flex 사용함
+- 프로그램 부분 완성
+- 파트너사 부분 완성
+  - grid 사용함
+  - 💡차이점 )) 내가 코딩한건 반응형으로 만들어서 창의 크기가 줄어들면 div의 크기도 같이 줄어들며서 4 \* 4의 형태를 유지하는데,, 사이트는 div의 크기를 유지하면서 창의크기가 줄어들면 div가 밑으로 (예쁘게) 내려감
+    - flex로..써야하나?? grid로는 안되나여?
+- 이미지는 귀찮아서 안넣음 🥲

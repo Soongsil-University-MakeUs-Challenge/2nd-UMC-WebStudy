@@ -285,3 +285,78 @@
   color: #5f5f5f;
   margin-bottom: 36px;
 }
+
+.reviewContentsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewContentImg {
+  width: 16vw;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #d8d8d8;
+}
+
+.reviewContentSmallTitle {
+  margin-top: 20px;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.reviewContentBigTitle {
+  width: 16vw;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reviewArrows {
+  /* background-color: #468eea; */
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reviewLeftArrow {
+  margin-right: 8px;
+}
+
+.reviewRightArrow {
+  margin-left: 8px;
+}
+
+.programContentsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.programContentImg {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 20px;
+  background-color: #d8d8d8;
+}
+
+.PCLogoContainer {
+  /* background-color: #468eea; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 0.5vw;
+  column-gap: 0.6vw;
+  align-items: stretch;
+
+  margin-bottom: 120px;
+}
+
+.PCLogo {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d8d8d8;
+  width: 12vw;
+  height: 5vw;
+  line-height: 5vw; /* 글자 정가운데 */
+  color: #5f5f5f;
+  text-align: center;
+}
