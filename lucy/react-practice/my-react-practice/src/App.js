@@ -142,15 +142,27 @@ function App() {
           </div>
           <div className="programContentsContainer">
             <div className="programContent">
-              <div className="programContentImg"> </div>
+              <img
+                className="programContentImg"
+                src="https://ukov.co.kr/static/media/first.f121e05d.jpg"
+                alt="programImg1"
+              ></img>
             </div>
 
             <div className="programContent">
-              <div className="programContentImg"> </div>
+              <img
+                className="programContentImg"
+                src="https://ukov.co.kr/static/media/second.58a90b72.jpg"
+                alt="programImg2"
+              ></img>
             </div>
 
             <div className="programContent">
-              <div className="programContentImg"> </div>
+              <img
+                className="programContentImg"
+                src="https://ukov.co.kr/static/media/third.15eb8b88.jpg"
+                alt="programImg3"
+              ></img>
             </div>
           </div>
         </div>
