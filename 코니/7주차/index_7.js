@@ -10,9 +10,6 @@ const commentItemTemplate = (newComment) => {
 			<p id="commentName">Mary Shen</p>
 			<p>${newComment}</p>
 			<div class="flex">
-
-
-			
 				<button class="commentBtn">
 					<span class="commentIcon">
 						<svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H6V7.39ZM2,8H5v5H2Z" class="style-scope yt-icon"></path></g></svg>
@@ -38,12 +35,35 @@ const commentItemTemplate = (newComment) => {
 
 $commentForm.addEventListener('submit', handleSumbit);
 
+const comments = [];
+
+function saveItem() {
+	localStorage.setItem("comments", JSON.stringify(comments));
+}
+
+function displayHistory () {
+	const savedComments = JSON.parse(localStorage.getItem('comments'));
+
+	savedComments.map(comment => {
+		const newCommentItem = commentItemTemplate(comment);
+		comments.push(comment);
+		$commentList.insertAdjacentHTML('afterbegin', newCommentItem);
+	})
+}
+
+displayHistory();
+
+
 function handleSumbit(event){
-	event.preventDefault(); // 새로고침 막기
-	const newComment = $commentInput.value; // 사용자 입력값 가져오기
+	event.preventDefault();
+	const newComment = $commentInput.value;
 
 	if (!newComment) {return};
 	const newCommentItem = commentItemTemplate(newComment);
 	$commentList.insertAdjacentHTML('afterbegin', newCommentItem);
   $commentInput.value = "";
+
+	comments.push(newComment);
+	// console.log(comments);
+	saveItem();
 }
