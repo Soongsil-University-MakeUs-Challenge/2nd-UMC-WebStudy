@@ -68,7 +68,7 @@
 
 .mainInfo {
   margin-top: 80px;
-  width: 25vw;
+  width: 24vw;
   display: inline-block;
   margin-bottom: 120px;
 }
@@ -88,6 +88,7 @@
 }
 
 .mainInfoParagraph {
+  word-break: keep-all;
   color: #5f5f5f;
   font-size: 20px;
   font-weight: 400;

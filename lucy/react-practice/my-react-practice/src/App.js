@@ -8,6 +8,36 @@ import { AiOutlineLeftCircle } from "react-icons/ai";
 // import daangn from "./assets/company.png";
 
 function App() {
+  const mainInfoText = [
+    {
+      title: "UKOV 미션",
+      subTitle: "더 많은 사람들이 스타트업 생태계로 Soft-landing 하는 것",
+      text: "스타트업 인턴십을 통해 스타트업의 현장을 피부로 느끼고 개인에게 맞는 일을 탐색합니다. 또한 동기들과의 협업 프로젝트를 통해 업무 협력성을 기르고 세상을 보는 시야를 확장합니다.",
+    },
+    {
+      title: "UKOV 비전",
+      subTitle: "스타트업을 통해 세상에 더 많은 긍정적 영향을 미치는 것",
+      text: "성공적인 스타트업 생태계 구성원이 되는 성장의 경험을 제공해주는 것을 목표로 합니다.그 성장 싸이클을 통해 양질의 인재로 거듭나 세상을 바꾸는 사람들이 되는 것을 꿈꿉니다.",
+    },
+  ];
+  const partnerCompanyList = [
+    { key: 1, name: 1 },
+    { key: 2, name: 2 },
+    { key: 3, name: 3 },
+    { key: 4, name: 4 },
+    { key: 5, name: 5 },
+    { key: 6, name: 6 },
+    { key: 7, name: 7 },
+    { key: 8, name: 8 },
+    { key: 9, name: 9 },
+    { key: 10, name: 10 },
+    { key: 11, name: 11 },
+    { key: 12, name: 12 },
+    { key: 13, name: 13 },
+    { key: 14, name: 14 },
+    { key: 15, name: 15 },
+    { key: 16, name: 16 },
+  ];
   return (
     <div>
       {/* 상단바 - 로고와 메뉴 이동  */}
@@ -23,7 +53,6 @@ function App() {
       </div>
       {/* 메인 - 홈페이지에서 제일 위에 보이는 (흰)부분 main이라 칭함 */}
       <div className="main">
-        {/* intro - 메인에 가장 크게 보이는 소개 문구 */}
         <div className="intro">
           우리는 대학생<br></br>
           벤처기사단입니다.
@@ -36,30 +65,13 @@ function App() {
 
         {/* mainInfo - 메인에 보이는 정보 */}
         <div className="mainInfoContainer">
-          <div className="mainInfo">
-            <div className="mainInfoTitle">UKOV 미션</div>
-            <p className="mainInfoSubTitle">
-              더 많은 사람들이 스타트업 생태계로 Soft-landing 하는 것
-            </p>
-            <p className="mainInfoParagraph">
-              스타트업 인턴십을 통해 스타트업의 현장을 피부로 느끼고 <br></br>
-              개인에게 맞는 일을 탐색합니다. <br></br>
-              또한 동기들과의 협업 프로젝트를 통해 업무 협력성을 기르고<br></br>
-              세상을 보는 시야를 확장합니다.
-            </p>
-          </div>
-          <div className="mainInfo">
-            <div className="mainInfoTitle">UKOV 비전</div>
-            <p className="mainInfoSubTitle">
-              스타트업을 통해 세상에 더 많은 긍정적 영향을 미치는 것
-            </p>
-            <p className="mainInfoParagraph">
-              성공적인 스타트업 생태계 구성원이 되는 성장의 경험을 <br></br>
-              제공해주는 것을 목표로 합니다.<br></br>그 성장 싸이클을 통해
-              양질의 인재로 거듭나 <br></br>
-              세상을 바꾸는 사람들이 되는 것을 꿈꿉니다.
-            </p>
-          </div>
+          {mainInfoText.map((information) => (
+            <div className="mainInfo">
+              <div className="mainInfoTitle">{information.title}</div>
+              <p className="mainInfoSubTitle">{information.subTitle}</p>
+              <p className="mainInfoParagraph">{information.text}</p>
+            </div>
+          ))}
         </div>
       </div>
       {/* mainBlack - 어두운 배경색 */}
@@ -174,25 +186,11 @@ function App() {
             다양한 스타트업들과 함께 해왔습니다.
           </div>
           <div className="PCLogoContainer">
-            <div className="PCLogo">1</div>
-            <div className="PCLogo">2</div>
-            <div className="PCLogo">3</div>
-            <div className="PCLogo">4</div>
-
-            <div className="PCLogo">5</div>
-            <div className="PCLogo">6</div>
-            <div className="PCLogo">7</div>
-            <div className="PCLogo">8</div>
-
-            <div className="PCLogo">9</div>
-            <div className="PCLogo">10</div>
-            <div className="PCLogo">11</div>
-            <div className="PCLogo">12</div>
-
-            <div className="PCLogo">13</div>
-            <div className="PCLogo">14</div>
-            <div className="PCLogo">15</div>
-            <div className="PCLogo">16</div>
+            {partnerCompanyList.map((partnerCompany) => (
+              <div key={partnerCompany.key} className="PCLogo">
+                {partnerCompany.name}
+              </div>
+            ))}
           </div>
         </div>
       </div>
