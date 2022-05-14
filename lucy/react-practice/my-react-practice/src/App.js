@@ -20,6 +20,37 @@ function App() {
       text: "성공적인 스타트업 생태계 구성원이 되는 성장의 경험을 제공해주는 것을 목표로 합니다.그 성장 싸이클을 통해 양질의 인재로 거듭나 세상을 바꾸는 사람들이 되는 것을 꿈꿉니다.",
     },
   ];
+  const reviews = [
+    {
+      reviewImg: " ",
+      reviewSmall: "UKOV 22기",
+      reviewBig: "유일한 졸업생 단원이 전하는 후기 글이 넘치면 이렇게 줄여서…",
+    },
+    {
+      reviewImg: " ",
+      reviewSmall: "UKOV 22기",
+      reviewBig: "유코브 선배들이 알려주는 유코브 합격꿀팁!",
+    },
+    {
+      reviewImg: " ",
+      reviewSmall: "UKOV 22기",
+      reviewBig: "유코브 선배들이 알려주는 유코브 합격꿀팁!",
+    },
+  ];
+  const programs = [
+    {
+      src: "https://ukov.co.kr/static/media/first.f121e05d.jpg",
+      alt: "programImg1",
+    },
+    {
+      src: "https://ukov.co.kr/static/media/second.58a90b72.jpg",
+      alt: "programImg2",
+    },
+    {
+      src: "https://ukov.co.kr/static/media/third.15eb8b88.jpg",
+      alt: "programImg3",
+    },
+  ];
   const partnerCompanyList = [
     { key: 1, name: 1 },
     { key: 2, name: 2 },
@@ -109,29 +140,15 @@ function App() {
           <div className="reviewSubtitle">더 많은 후기 보러가기</div>
 
           <div className="reviewContentsContainer">
-            <div className="reviewContent">
-              <div className="reviewContentImg"> </div>
-              <div className="reviewContentSmallTitle">UKOV 22기</div>
-              <div className="reviewContentBigTitle">
-                유일한 졸업생 단원이 전하는 후기 글이 넘치면 이렇게 줄여서…
+            {reviews.map((review) => (
+              <div className="reviewContent">
+                <div className="reviewContentImg">{review.reviewImg}</div>
+                <div className="reviewContentSmallTitle">
+                  {review.reviewSmall}
+                </div>
+                <div className="reviewContentBigTitle">{review.reviewBig}</div>
               </div>
-            </div>
-
-            <div className="reviewContent">
-              <div className="reviewContentImg"> </div>
-              <div className="reviewContentSmallTitle">UKOV 22기</div>
-              <div className="reviewContentBigTitle">
-                유코브 선배들이 알려주는 유코브 합격꿀팁!
-              </div>
-            </div>
-
-            <div className="reviewContent">
-              <div className="reviewContentImg"> </div>
-              <div className="reviewContentSmallTitle">UKOV 22기</div>
-              <div className="reviewContentBigTitle">
-                유코브 선배들이 알려주는 유코브 합격꿀팁!
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="reviewArrows">
@@ -153,29 +170,15 @@ function App() {
             유코브 단원이 되면 다음과 같은 프로그램을 함께합니다.
           </div>
           <div className="programContentsContainer">
-            <div className="programContent">
-              <img
-                className="programContentImg"
-                src="https://ukov.co.kr/static/media/first.f121e05d.jpg"
-                alt="programImg1"
-              ></img>
-            </div>
-
-            <div className="programContent">
-              <img
-                className="programContentImg"
-                src="https://ukov.co.kr/static/media/second.58a90b72.jpg"
-                alt="programImg2"
-              ></img>
-            </div>
-
-            <div className="programContent">
-              <img
-                className="programContentImg"
-                src="https://ukov.co.kr/static/media/third.15eb8b88.jpg"
-                alt="programImg3"
-              ></img>
-            </div>
+            {programs.map((program) => (
+              <div className="programContent">
+                <img
+                  className="programContentImg"
+                  src={program.src}
+                  alt={program.alt}
+                ></img>
+              </div>
+            ))}
           </div>
         </div>
 
