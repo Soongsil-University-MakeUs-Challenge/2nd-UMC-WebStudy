@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Review from "./review";
 import axios from "axios";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import { AiOutlineLeftCircle } from "react-icons/ai";
 
 function Reviews() {
   const [data, setData] = useState([]);
@@ -21,6 +23,10 @@ function Reviews() {
         {data.map((review) => (
           <Review review={review} />
         ))}
+      </div>
+      <div className="reviews_left_right">
+        <AiOutlineLeftCircle size="34" color="#d6d6d6" />
+        <AiOutlineRightCircle size="34" color="#d6d6d6" />
       </div>
     </>
   );
