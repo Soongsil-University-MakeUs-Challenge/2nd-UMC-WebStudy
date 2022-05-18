@@ -6,13 +6,16 @@
 }
 
 nav {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
-  box-shadow: 0 2px 0 0 #f4f4f4;
+  justify-content: space-between;
+  padding: 25px 0 20px 0;
 }
 
-.nav_logo {
-  margin: 25px 0 20px 411px;
-  flex-grow: 1;
+.nav_slash {
+  border: solid 1px #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 #nav_logo {
@@ -21,19 +24,19 @@ nav {
 }
 
 .nav_button_list {
-  flex-grow: 1;
-  margin: 25px 250px 20px 0;
   display: flex;
   font-size: 20px;
   font-weight: bold;
   justify-content: space-evenly;
 }
 
-.nav_button_home {
-  color: #468eea;
+.nav_button {
+  padding: 0 10px 0 10px;
 }
 
 .introduce_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 35px;
   line-height: 1.22;
@@ -41,10 +44,11 @@ nav {
 
 .introduce_title_list {
   margin-top: 110px;
-  margin-left: 410px;
 }
 
 .introduce_mini_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: normal;
   color: #5f5f5f;
@@ -53,13 +57,14 @@ nav {
 
 .introduce_mini_title_list {
   margin-top: 22px;
-  margin-left: 410px;
 }
 
 .introduce_mission_vision {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 70px 280px 0 410px;
+  margin-top: 50px;
 }
 
 .introduce_mission_vision_title {
@@ -74,6 +79,7 @@ nav {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
+  margin-top: 10px;
 }
 
 .introduce_mission_vision_content_2 {
@@ -108,9 +114,24 @@ nav {
 }
 
 .trip_count {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 30px 450px 0 450px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .trip_count {
+    flex-direction: column;
+  }
+  .trip_count_slash {
+    display: none;
+  }
+  .trip_count_box {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 .trip_count_box {
@@ -132,25 +153,28 @@ nav {
 }
 
 .reviews_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 35px;
   line-height: 1.22;
   margin-top: 100px;
-  margin-left: 410px;
 }
 
 .reviews_mini_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: normal;
   color: #5f5f5f;
   line-height: 1.6;
   margin-top: 20px;
-  margin-left: 410px;
 }
 
 .reviews_all {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
-  margin-left: 410px;
   margin-top: 30px;
 }
 
@@ -179,25 +203,28 @@ nav {
 }
 
 .remainder_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 35px;
   line-height: 1.22;
   margin-top: 100px;
-  margin-left: 410px;
 }
 
 .remainder_mini_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: normal;
   color: #5f5f5f;
   line-height: 1.6;
   margin-top: 20px;
-  margin-left: 410px;
 }
 
 .remainder_programs {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
-  margin-left: 410px;
   margin-top: 20px;
 }
 
@@ -223,26 +250,30 @@ nav {
 }
 
 .remainder_partner_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 35px;
   line-height: 1.22;
   margin-top: 100px;
-  margin-left: 410px;
 }
 
 .remainder_partner_mini_title {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: normal;
   color: #5f5f5f;
   line-height: 1.6;
   margin-top: 20px;
-  margin-left: 410px;
 }
 
 .remainder_partners {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-flow: wrap;
-  margin: 30px 300px 0 410px;
+  margin-top: 30px;
 }
 
 .remainder_partner_img {
@@ -286,10 +317,12 @@ nav {
 
 .remainder_credit {
   background-color: #f4f4f4;
-  padding: 70px 0 80px 410px;
+  padding: 50px 0 70px 0;
 }
 
 .remainder_credit_info {
+  max-width: 1000px;
+  margin: 0 auto;
   color: #5f5f5f;
   font-size: 20px;
   font-weight: bold;
@@ -297,6 +330,8 @@ nav {
 }
 
 .remainder_credit_contact {
+  max-width: 1000px;
+  margin: 0 auto;
   color: #5f5f5f;
   font-size: 15px;
   margin-top: 5px;
@@ -304,6 +339,8 @@ nav {
 }
 
 .remainder_credit_copyright {
+  max-width: 1000px;
+  margin: 0 auto;
   color: #5b5b5b;
   font-size: 15px;
   margin-top: 5px;

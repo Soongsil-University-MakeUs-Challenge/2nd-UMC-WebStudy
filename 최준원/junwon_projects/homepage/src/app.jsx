@@ -8,11 +8,14 @@ import Trip from "./components/trip";
 function App() {
   return (
     <>
-      <Navbar />
-      <Introduce />
-      <Trip />
-      <Reviews />
-      <Remainder />
+      <div className="container">
+        <Navbar />
+        <div className="nav_slash"></div>
+        <Introduce />
+        <Trip />
+        <Reviews />
+        <Remainder />
+      </div>
     </>
   );
 }
