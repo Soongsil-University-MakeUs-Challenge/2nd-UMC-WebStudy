@@ -1,8 +1,13 @@
 # React-practice
 
-🐻‍❄️ 리액트 공부를 위한 레퍼지토리 입니당.
+🐻‍❄️ 리액트 공부를 위한 레퍼지토리
 
-[우에엥](https://app.zeplin.io/project/5f8724084323df37e6162af0/screen/5f872426bb0337bf88479178)
+👩‍💻 UKOV 클론 코딩
+
+[UKOV](https://ukov.co.kr/home)  
+[UKOV Zeplin](https://app.zeplin.io/project/5f8724084323df37e6162af0/screen/5f872426bb0337bf88479178)
+
+---
 
 ![](https://ifh.cc/g/Flmxoo.jpg)
 ![](https://ifh.cc/g/f1OOrQ.png)
@@ -40,3 +45,8 @@
   - 💡차이점 )) 내가 코딩한건 반응형으로 만들어서 창의 크기가 줄어들면 div의 크기도 같이 줄어들며서 4 \* 4의 형태를 유지하는데,, 사이트는 div의 크기를 유지하면서 창의크기가 줄어들면 div가 밑으로 (예쁘게) 내려감
     - flex로..써야하나?? grid로는 안되나여?
 - 이미지는 귀찮아서 안넣음 🥲
+
+👀 5/18
+
+- App.js에 모두 작성했던 코드 components 폴더 생성 후 컴포넌트 단위로 나누기 완료
+  - 다음부터는 처음부터 컴포넌트 단위로 나눠야겠음
