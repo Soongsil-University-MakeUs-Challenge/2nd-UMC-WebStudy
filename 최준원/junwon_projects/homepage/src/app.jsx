@@ -10,7 +10,6 @@ function App() {
     <>
       <div className="container">
         <Navbar />
-        <div className="nav_slash"></div>
         <Introduce />
         <Trip />
         <Reviews />
