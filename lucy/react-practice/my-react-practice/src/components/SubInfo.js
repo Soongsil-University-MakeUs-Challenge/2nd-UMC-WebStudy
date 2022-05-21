@@ -52,6 +52,7 @@ function SubInfo() {
     { key: 15, name: 15 },
     { key: 16, name: 16 },
   ];
+
   return (
     <div className="subInfo">
       <div className="reviewContainer">
