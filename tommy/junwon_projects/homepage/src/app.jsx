@@ -4,16 +4,23 @@ import Navbar from "./components/navbar";
 import Remainder from "./components/remainder";
 import Reviews from "./components/reviews";
 import Trip from "./components/trip";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Tommy from "./components/tommy";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
       <div className="container">
-        <Navbar />
-        <Introduce />
-        <Trip />
-        <Reviews />
-        <Remainder />
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Introduce />}></Route>
+            <Route path="/tommy" element={<Reviews />}></Route>
+            <Route path="/umc_web" element={<Remainder />}></Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </div>
     </>
   );
