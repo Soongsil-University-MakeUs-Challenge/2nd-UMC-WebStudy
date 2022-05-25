@@ -3,9 +3,7 @@ import Introduce from "./components/introduce";
 import Navbar from "./components/navbar";
 import Remainder from "./components/remainder";
 import Reviews from "./components/reviews";
-import Trip from "./components/trip";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Tommy from "./components/tommy";
 import Footer from "./components/footer";
 
 function App() {
